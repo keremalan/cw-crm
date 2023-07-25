@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clinic Wall - Anasayfa</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <script src="assets/js/jquery.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="h-profile">
+            <img src="assets/img/img-profile-photo.svg" alt="" class="h-profile-photo">
+            <div class="h-profile-details">
+                <span class="h-profile-details-name">Kerem Alan</span>
+                <div class="h-profile-details-clinic">
+                    <img src="assets/img/icon-clinic.svg" alt="" class="h-profile-details-clinic-icon">
+                    <span class="h-profile-details-clinic-name">DentAcademy Şişli</span>
+                </div>
+            </div>
+        </div>
+        <nav class="h-nav">
+            <ul class="h-nav-links">
+                <li>
+                    <a class="h-nav-links-item" href="">
+                        <img src="assets/img/icon-tasks.svg" alt="" class="h-nav-links-item-icon">
+                        <span class="h-nav-links-item-label">Tasks</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="tasks">
+            <div class="t-header">
+                <img src="assets/img/icon-tasks.svg" alt="" class="t-header-icon">
+                <span class="t-header-text">Tasks</span>
+            </div>
+            <div class="t-body">
+                <div class="t-body-nav">
+                    <div class="t-body-nav-head">
+                        <div class="lock-r">
+                            <img src="assets/img/icon-tasks-black.svg" alt="" class="t-body-nav-head-icon">
+                            <span class="t-body-nav-head-text">Tasks</span>
+                        </div>
+                        <span class="t-body-nav-head-count">4</span>
+                    </div>
+                    <div class="t-body-nav-slicer"></div>
+                    <ul class="t-body-nav-list">
+                        <li class="t-body-nav-list-box">
+                            <a href="" class="t-body-nav-item">
+                                <div class="lock-r">
+                                    <img src="assets/img/icon-calls.svg" alt="" class="t-body-nav-item-icon">
+                                    <span class="t-body-nav-item-text">Calls</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="t-body-nav-list-box">
+                            <a href="" class="t-body-nav-item">
+                                <div class="lock-r">
+                                    <img src="assets/img/icon-messages.svg" alt="" class="t-body-nav-item-icon">
+                                    <span class="t-body-nav-item-text">Messages</span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="t-body-contacts">
+                    <div class="contacts-header">
+                        <img src="assets/img/icon-add-contacts.svg" alt="" class="contacts-header-icon">
+                        <h3 class="contacts-header-title">Contacts</h3>
+                        <div class="lock-r">
+                            <span class="contacts-header-stat"><span class="chs-count">234</span> Messages,</span><span
+                                class="contacts-header-stat"><span class="chs-count">&nbsp;2</span> Unread</span>
+                        </div>
+                    </div>
+                    <input type="search" class="contacts-search-input" placeholder="Search">
+                    <ul class="contacts-list">
+                        <li>
+                            <a href="" class="contacts-list-item">
+                                <img src="assets/img/img-contact-profile.svg" alt=""
+                                    class="contact-list-item-profile-photo">
+                                <div class="contact-list-item-profile-details">
+                                    <div class="lock-r relative">
+                                        <span class="contact-list-item-profile-details-message-time">12:30</span>
+                                        <span class="contact-list-item-profile-details-name">Beliz Kaya</span>
+                                        <div class="contact-list-item-message-dot"></div>
+                                    </div>
+                                    <span class="contact-list-item-profile-details-message-preview">Randevu saatimi
+                                        değiştirmek istiyorum.</span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="t-body-chat">
+                    <div class="t-body-chat-talking-now">
+                        <div class="lock-r">
+                            <img src="assets/img/img-contact-profile.svg" alt=""
+                                class="t-body-chat-talking-now-profile-photo">
+                            <span class="t-body-chat-talking-now-text">Şu anda&nbsp;<strong
+                                    class="talking-now-user-name">Beliz Kaya</strong>&nbsp;ile görüşüyorsunuz.</span>
+                        </div>
+                        <div class="lock-r talking-now-action-buttons">
+                            <div class="t-body-chat-talking-now-action-button top-add-appointment-action">
+                                <img src="assets/img/icon-appointment-white.svg" alt=""
+                                    class="t-body-chat-talking-now-action-button-icon">
+                                <span class="t-body-chat-talking-now-action-button-text add-appointment">Randevu
+                                    Ekle</span>
+                            </div>
+                            <div class="t-body-chat-talking-now-action-button only-icon-button">
+                                <img src="assets/img/icon-call-white.svg" alt=""
+                                    class="t-body-chat-talking-now-action-button-icon nmr">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="t-body-chat-alert d-none">
+                        <div class="lock-r">
+                            <img src="assets/img/icon-ring-call.svg" alt="" class="chat-alert-icon">
+                            <span class="alert-talking-now-user-name">Peri Kazanan</span>&nbsp;<span
+                                class="alert-call-info">bir çağrı
+                                gönderdi.</span>
+                            <span class="alert-call-time">(10 dakika önce)</span>
+                        </div>
+                        <div class="lock-r">
+                            <button class="alert-call-button">Ara</button>
+                            <button class="alert-close-button">
+                                X
+                            </button>
+                        </div>
+                    </div>
+                    <div class="t-body-chat-alert">
+                        <div class="lock-r">
+                            <img src="assets/img/icon-appointment-request-alert.svg" alt="" class="chat-alert-icon">
+                            <span class="alert-talking-now-user-name">Peri Kazanan</span>&nbsp;<span
+                                class="alert-call-info">bir randevu isteği
+                                gönderdi.</span>
+                            <span class="alert-call-time">(1 saat önce)</span>
+                        </div>
+                        <div class="lock-r">
+                            <button class="alert-call-button">Görüntüle</button>
+                            <button class="alert-close-button">
+                                X
+                            </button>
+                        </div>
+                    </div>
+                    <div class="t-body-chat-alert">
+                        <div class="lock-r">
+                            <img src="assets/img/icon-message-alert.svg" alt="" class="chat-alert-icon">
+                            <span class="alert-talking-now-user-name">Peri Kazanan</span>&nbsp;<span
+                                class="alert-call-info">bir mesaj gönderdi.</span>
+                            <span class="alert-call-time">(30 dakika önce)</span>
+                        </div>
+                        <div class="lock-r">
+                            <button class="alert-close-button">
+                                X
+                            </button>
+                        </div>
+                    </div>
+                    <div class="t-body-chat-content" id="chat-content-div">
+                        <div class="day-slicer">
+                            <hr class="day-slicer-hr">
+                            <span class="day-slicer-messages-day">30 Ağustos</span>
+                            <hr class="day-slicer-hr">
+                        </div>
+                        <div class="message-box">
+                            <div class="appointment-request-from-patient">
+                                <div class="request-message">
+                                    <img src="assets/img/icon-calendar-black.svg" alt=""
+                                        class="request-message-icon">Bir randevu talebi gönderdi.
+                                </div>
+                                <span class="request-message-info">Mesaja tıklayarak görüntüleyebilirsiniz.</span>
+                            </div>
+                            <span class="message-time">12:30</span>
+                        </div>
+                        <div class="message-box">
+                            <div class="missing-call-from-patient">
+                                <img src="assets/img/icon-call-black.svg" alt="" class="missing-call-icon">Cevapsız bir
+                                çağrı gönderdi.
+                            </div>
+                            <div class="message-time">12:32</div>
+                        </div>
+                        <div class="message-box">
+                            <div class="appointment-request-from-clinic">
+                                <div class="request-message">
+                                    <img src="assets/img/icon-calendar-white.svg" alt=""
+                                        class="request-message-icon">Bir randevu oluşturdunuz.
+                                </div>
+                                <div class="request-message-info">Mesaja tıklayarak görüntüleyebilirsiniz.</div>
+                            </div>
+                            <div class="message-time mt-sent">12:40</div>
+                        </div>
+                        <div class="day-slicer">
+                            <hr class="day-slicer-hr">
+                            <span class="day-slicer-messages-day">Bugün</span>
+                            <hr class="day-slicer-hr">
+                        </div>
+                        <div class="message-box">
+                            <span class="message sent">Merhaba!</span>
+                            <span class="message-time mt-sent">12:00</span>
+                        </div>
+                        <div class="message-box">
+                            <span class="message ">Merhaba</span>
+                            <div class="message-time">12:10</div>
+                        </div>
+                        <div class="message-box">
+                            <span class="message sent">Bugün randevunuz vardı. Gelecek misiniz?</span>
+                            <span class="message sent">Doktorumuz randevunuz için sizi bekliyor olacak.</span>
+                            <span class="message sent">??</span>
+                            <div class="message-time mt-sent">12:12</div>
+                        </div>
+                        <div class="message-box">
+                            <span class="message">Evet, geleceğim.</span>
+                            <span class="message">Evet, geleceğim.</span>
+                            <span class="message">Evet, geleceğim.</span>
+                            <span class="message">Evet, geleceğim.</span>
+                            <span class="message">Evet, geleceğim.</span>
+                            <span class="message-time">12:30</span>
+                        </div>
+                        <div class="message-box">
+                            <span class="message">Pardon, birden fazla mesaj gelmiş. Bir hata olmuş olmalı.Pardon,
+                                birden fazla mesaj gelmiş. Bir hata olmuş olmalı.</span>
+                            <span class="message-time">12:31</span>
+                        </div>
+                        <div class="message-box">
+                            <span class="message sent">Sorun değil. Görüşmek üzere.</span>
+                            <span class="message-time mt-sent">12:32</span>
+                        </div>
+                    </div>
+                    <div class="t-body-chat-write-message">
+                        <textarea name="" id="myTextarea" cols="40" maxlength="280" class="send-message-textarea"
+                            placeholder="Mesajınızı giriniz..." oninput="characterCount()"></textarea>
+                        <img src="assets/img/icon-send-message-white.svg" alt="" class="t-body-chat-write-message-icon">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- pop-ups start -->
+    <div class="popup-background none"></div>
+    <div class="popup-add-appointment none">
+        <div class="popup-body">
+            <img src="assets/img/icon-close-black.svg" alt="" class="popup-close-button add-close">
+            <div class="popup-header">
+                <h3 class="popup-header-title">Randevu Ekle</h3>
+                <span class="popup-header-text"><span class="patient-name">Beliz Kaya&nbsp;</span>için bir randevu
+                    oluşturuyorsunuz.</span>
+            </div>
+            <form action="" class="add-appointment-form">
+                <label class="popup-label nmt" for="add-appointment-select-doctor">Doktor</label>
+                <div class="add-appointment-select-box">
+                    <img src="assets/img/icon-doctor-grey.svg" alt="" class="popup-select-icon">
+                    <select name="add-appointment-select-doctor" id="" class="popup-add-appointment-select-doctor">
+                        <option value="" disabled selected>Bir doktor seçin</option>
+                        <option value="">Dr. Henry Bergamaschi</option>
+                        <option value="">Dr. Baurkai Catakinov</option>
+                    </select>
+                </div>
+                <label for="add-appointment-treatment" class="popup-label">Tedavi</label>
+                <div class="add-appointment-select-box">
+                    <img src="assets/img/icon-treatment-grey.svg" alt="" class="popup-select-icon">
+                    <input type="text" name="add-appointment-treatment" class="popup-add-appointment-select-treatment"
+                        placeholder="Tedavi adını girin">
+                </div>
+                <label for="add-appointment-date" class="popup-label">Randevu Tarihi</label>
+                <div class="add-appointment-select-box">
+                    <img src="assets/img/icon-date-grey.svg" alt="" class="popup-select-icon">
+                    <span class="popup-select-text">Randevu tarihini seçin</span>
+                </div>
+                <label for="add-appointment-time" class="popup-label">Randevu Saati</label>
+                <div class="add-appointment-select-box">
+                    <img src="assets/img/icon-clock-start-grey.svg" alt="" class="popup-select-icon">
+                    <span class="popup-select-text">Başlangıç saatini seçin</span>
+                </div>
+                <div class="add-appointment-select-box">
+                    <img src="assets/img/icon-clock-end-grey.svg" alt="" class="popup-select-icon">
+                    <span class="popup-select-text">Bitiş saatini seçin</span>
+                </div>
+                <div class="popup-action-buttons">
+                    <button class="popup-action-button decline-action edit-decline-action" type="button">İptal
+                        Et</button>
+                    <button class="popup-action-button accept-action edit-sent-action" type="button">Gönder</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="popup-next-appointment none">
+        <div class="popup-body">
+            <img src="assets/img/icon-close-black.svg" alt="" class="popup-close-button next-close">
+            <div class="popup-header">
+                <h3 class="popup-header-title">Randevu Ekle</h3>
+                <span class="popup-header-text"><span class="patient-name">Beliz Kaya&nbsp;</span>için oluşturduğunuz
+                    randevu detayları.</span>
+            </div>
+            <img src="assets/img/icon-check-appointment.png" alt="" class="popup-top-icon">
+            <h3 class="popup-subheadline">Detaylar</h3>
+            <div class="popup-detail-box">
+                <span class="popup-detail-box-label">Klinik</span>
+                <span class="popup-detail-box-value appointment-clinic">The Dental Practice UK</span>
+            </div>
+            <div class="popup-detail-box">
+                <span class="popup-detail-box-label">Tedavi</span>
+                <span class="popup-detail-box-value appointment-treatment">Genel Diş</span>
+            </div>
+            <div class="popup-detail-box">
+                <span class="popup-detail-box-label">Doktor</span>
+                <span class="popup-detail-box-value appointment-doctor">Dt. Gianna Binotto</span>
+            </div>
+            <div class="popup-detail-box">
+                <span class="popup-detail-box-label">Tarih</span>
+                <span class="popup-detail-box-value appointment-date-time"><span class="appointment-date">4 Ağustos
+                        2022</span> - <span class="appointment-time">11:30</span></span>
+            </div>
+            <div class="popup-action-buttons">
+                <button class="popup-action-button decline-action add-appointment-back-action"
+                    type="button">Geri</button>
+                <button class="popup-action-button accept-action send-appointment-action" type="button">Gönder</button>
+            </div>
+        </div>
+    </div>
+    <div class="popup-sent-appointment none">
+        <div class="popup-body popup-info-body">
+            <img src="assets/img/icon-close-black.svg" alt="" class="popup-close-button ok-close">
+            <h3 class="popup-info-title">Randevu Gönderildi</h3>
+            <span class="popup-info-text"><span class="patient-name">Beliz Kaya</span>&nbsp;için oluşturduğunuz randevu
+                gönderilmiştir.</span>
+            <button class="popup-action-button ok-button" type="button">Tamam</button>
+        </div>
+    </div>
+    <div class="popup-edit-appointment none">
+        <div class="popup-body">
+            <img src="assets/img/icon-close-black.svg" alt="" class="popup-close-button edit-close">
+            <div class="popup-header">
+                <h3 class="popup-header-title">Randevu Düzenle</h3>
+                <span class="popup-header-text"><span class="patient-name">Beliz Kaya&nbsp;</span>tarafından gönderilen
+                    randevuyu
+                    düzenliyorsunuz.</span>
+            </div>
+            <form action="" class="add-appointment-form">
+                <label class="popup-label nmt" for="add-appointment-select-doctor">Doktor</label>
+                <div class="add-appointment-select-box">
+                    <img src="assets/img/icon-doctor-grey.svg" alt="" class="popup-select-icon">
+                    <select name="add-appointment-select-doctor" id="" class="popup-add-appointment-select-doctor">
+                        <option value="" disabled selected>Bir doktor seçin</option>
+                        <option value="" selected>Dr. Henry Bergamaschi</option>
+                        <option value="">Dr. Baurkai Catakinov</option>
+                    </select>
+                </div>
+                <label for="add-appointment-treatment" class="popup-label">Tedavi</label>
+                <div class="add-appointment-select-box">
+                    <img src="assets/img/icon-treatment-grey.svg" alt="" class="popup-select-icon">
+                    <input type="text" name="add-appointment-treatment" class="popup-add-appointment-select-treatment"
+                        placeholder="Tedavi adını girin" value="Genel Diş">
+                </div>
+                <label for="add-appointment-date" class="popup-label">Randevu Tarihi</label>
+                <div class="add-appointment-select-box">
+                    <img src="assets/img/icon-date-grey.svg" alt="" class="popup-select-icon">
+                    <span class="popup-select-text">14.05.2023</span>
+                </div>
+                <label for="add-appointment-time" class="popup-label">Randevu Saati</label>
+                <div class="add-appointment-select-box">
+                    <img src="assets/img/icon-clock-start-grey.svg" alt="" class="popup-select-icon">
+                    <span class="popup-select-text">15:30</span>
+                </div>
+                <div class="add-appointment-select-box">
+                    <img src="assets/img/icon-clock-end-grey.svg" alt="" class="popup-select-icon">
+                    <span class="popup-select-text">16:00</span>
+                </div>
+                <div class="popup-action-buttons">
+                    <button class="popup-action-button decline-action edit-cancel-appointment" type="button">İptal
+                        Et</button>
+                    <button class="popup-action-button accept-action edit-apply-appointment"
+                        type="button">Düzenle</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="popup-appointment-request none">
+        <div class="popup-body">
+            <img src="assets/img/icon-close-black.svg" alt="" class="popup-close-button patient-request-close">
+            <div class="popup-header">
+                <h3 class="popup-header-title">Randevu Talebi</h3>
+                <span class="popup-header-text"><span class="patient-name">Peri Kazanan</span>&nbsp;tarafından
+                    gönderilen randevu talebi.</span>
+            </div>
+            <img src="assets/img/appointment-request-popup.png" alt="" class="popup-top-icon top-icon-fix">
+            <h3 class="popup-subheadline">Detaylar</h3>
+            <div class="popup-detail-box">
+                <span class="popup-detail-box-label">Klinik</span>
+                <span class="popup-detail-box-value appointment-clinic">The Dental Practice UK</span>
+            </div>
+            <div class="popup-detail-box">
+                <span class="popup-detail-box-label">Tedavi</span>
+                <span class="popup-detail-box-value appointment-treatment">Genel Diş</span>
+            </div>
+            <div class="popup-detail-box">
+                <span class="popup-detail-box-label">Doktor</span>
+                <span class="popup-detail-box-value appointment-doctor">Dt. Gianna Binotto</span>
+            </div>
+            <div class="popup-detail-box">
+                <span class="popup-detail-box-label">Tarih</span>
+                <span class="popup-detail-box-value appointment-date-time"><span class="appointment-date">4 Ağustos
+                        2022</span> - <span class="appointment-time">11:30</span></span>
+            </div>
+            <div class="popup-action-buttons">
+                <button class="popup-action-button r-decline-action" type="button">Reddet</button>
+                <button class="popup-action-button edit-action" type="button">Düzenle</button>
+                <button class="popup-action-button r-accept-action" type="button">Onayla</button>
+            </div>
+        </div>
+    </div>
+    <div class="popup-accept-appointment none">
+        <div class="popup-body popup-info-body">
+            <img src="assets/img/icon-close-black.svg" alt="" class="popup-close-button aa-close">
+            <h3 class="popup-info-title aa-fix">Randevu Onaylandı!</h3>
+            <span class="popup-info-text"><span class="patient-name">Peri Kazanan</span>&nbsp;için randevu
+                oluşturdunuz.</span>
+            <button class="popup-action-button aa-button" type="button">Tamam</button>
+        </div>
+    </div>
+    <div class="popup-decline-appointment none">
+        <div class="popup-body popup-info-body">
+            <img src="assets/img/icon-close-black.svg" alt="" class="popup-close-button da-close">
+            <h3 class="popup-info-title da-fix">Randevu Reddedildi!</h3>
+            <span class="popup-info-text"><span class="patient-name">Peri Kazanan</span>&nbsp;tarafından gönderilen
+                randevu talebi reddedildi.</span>
+            <button class="popup-action-button da-button" type="button">Tamam</button>
+        </div>
+    </div>
+    <!-- pop-ups end -->
+    <script>
+        $('.top-add-appointment-action').on('click', function () {
+            $('.popup-background').toggleClass("flex-show");
+            $('.popup-add-appointment').toggleClass("flex-show");
+        });
+
+        $('.add-appointment-decline-action').on('click', function () {
+            $('.popup-background').removeClass("flex-show");
+            $('.popup-add-appointment').removeClass("flex-show");
+        });
+
+        $('.next-appointment-action').on('click', function () {
+            $('.popup-add-appointment').removeClass("flex-show");
+            $('.popup-next-appointment').toggleClass("flex-show");
+        });
+
+        $('.add-appointment-back-action').on('click', function () {
+            $('.popup-add-appointment').toggleClass("flex-show");
+            $('.popup-next-appointment').removeClass("flex-show");
+        });
+
+        $('.send-appointment-action').on('click', function () {
+            $('.popup-next-appointment').removeClass("flex-show");
+            $('.popup-sent-appointment').toggleClass("flex-show");
+        });
+
+        $('.ok-button').on('click', function () {
+            $('.popup-background').removeClass("flex-show");
+            $('.popup-sent-appointment').removeClass("flex-show");
+        });
+
+        $('.add-close').on('click', function () {
+            $('.popup-background').removeClass("flex-show");
+            $('.popup-add-appointment').removeClass("flex-show");
+        });
+
+        $('.next-close').on('click', function () {
+            $('.popup-background').removeClass("flex-show");
+            $('.popup-next-appointment').removeClass("flex-show");
+        });
+
+        $('.ok-close').on('click', function () {
+            $('.popup-background').removeClass("flex-show");
+            $('.popup-sent-appointment').removeClass("flex-show");
+        });
+    </script>
+    <script>
+        $('.appointment-request-from-patient').on('click', function () {
+            $('.popup-background').toggleClass("flex-show");
+            $('.popup-appointment-request').toggleClass("flex-show");
+        });
+    </script>
+    <script>
+        $('.edit-apply-appointment').on('click', function () {
+            $('.popup-edit-appointment').removeClass("flex-show");
+            $('.popup-appointment-request').toggleClass("flex-show");
+        });
+    </script>
+    <script>
+        $('.patient-request-close').on('click', function () {
+            $('.popup-background').removeClass("flex-show");
+            $('.popup-appointment-request').removeClass("flex-show");
+            $('.patient-request-close').removeClass("flex-show");
+        });
+    </script>
+    <script>
+        $('.aa-close').on('click', function () {
+            $('.popup-accept-appointment').removeClass("flex-show");
+            $('.popup-background').removeClass("flex-show");
+        });
+    </script>
+    <script>
+        $('.edit-close').on('click', function () {
+            $('.popup-edit-appointment').removeClass("flex-show");
+            $('.popup-background').removeClass("flex-show");
+        });
+    </script>
+    <script>
+        $('.da-close').on('click', function () {
+            $('.popup-decline-appointment').removeClass("flex-show");
+            $('.popup-background').removeClass("flex-show");
+        });
+    </script>
+    <script>
+        $('.aa-button').on('click', function () {
+            $('.popup-accept-appointment').removeClass("flex-show");
+            $('.popup-background').removeClass("flex-show");
+        });
+    </script>
+    <script>
+        $('.da-button').on('click', function () {
+            $('.popup-decline-appointment').removeClass("flex-show");
+            $('.popup-background').removeClass("flex-show");
+        });
+    </script>
+    <script>
+        $(document).on('keydown', function (event) {
+            if (event.key == "Escape") {
+                $('.popup-background').removeClass("flex-show");
+                $('.popup-add-appointment').removeClass("flex-show");
+                $('.popup-next-appointment').removeClass("flex-show");
+                $('.popup-sent-appointment').removeClass("flex-show");
+                $('.popup-appointment-request').removeClass("flex-show");
+                $('.popup-accept-appointment').removeClass("flex-show");
+                $('.popup-decline-appointment').removeClass("flex-show");
+                $('.popup-edit-appointment').removeClass("flex-show");
+            }
+        });
+    </script>
+    <script>
+        $('.edit-cancel-appointment').on('click', function () {
+            $('.popup-edit-appointment').removeClass("flex-show");
+            $('.popup-appointment-request').toggleClass("flex-show");
+        });
+    </script>
+    <script>
+        $('.r-accept-action').on('click', function () {
+            $('.popup-appointment-request').removeClass("flex-show");
+            $('.popup-accept-appointment').toggleClass("flex-show");
+        });
+    </script>
+    <script>
+        $('.r-decline-action').on('click', function () {
+            $('.popup-appointment-request').removeClass("flex-show");
+            $('.popup-decline-appointment').toggleClass("flex-show");
+        });
+    </script>
+    <script>
+        $('.popup-background').on('click', function () {
+            $('.popup-background').removeClass("flex-show");
+            $('.popup-add-appointment').removeClass("flex-show");
+            $('.popup-next-appointment').removeClass("flex-show");
+            $('.popup-sent-appointment').removeClass("flex-show");
+            $('.popup-appointment-request').removeClass("flex-show");
+            $('.popup-accept-appointment').removeClass("flex-show");
+            $('.popup-decline-appointment').removeClass("flex-show");
+            $('.popup-edit-appointment').removeClass("flex-show");
+        });
+
+        $('.popup-next-appointment').on('click', function () {
+            $('.popup-background').removeClass("flex-show");
+            $('.popup-add-appointment').removeClass("flex-show");
+            $('.popup-next-appointment').removeClass("flex-show");
+            $('.popup-sent-appointment').removeClass("flex-show");
+        });
+
+        $('.popup-sent-appointment').on('click', function () {
+            $('.popup-background').removeClass("flex-show");
+            $('.popup-add-appointment').removeClass("flex-show");
+            $('.popup-next-appointment').removeClass("flex-show");
+            $('.popup-sent-appointment').removeClass("flex-show");
+        });
+    </script>
+    <script>
+        $('.edit-action').on('click', function () {
+            $('.popup-appointment-request').removeClass("flex-show");
+            $('.popup-edit-appointment').toggleClass("flex-show");
+        });
+    </script>
+    <script>
+        $('.popup-body').on('click', function (event) {
+            event.stopPropagation();
+        });
+    </script>
+    <script>
+        document.querySelectorAll('.send-message-textarea').forEach(element => {
+            element.style.height = `${element.scrollHeight}px`;
+            element.addEventListener('input', event => {
+                event.target.style.height = 'auto';
+                event.target.style.height = `${event.target.scrollHeight}px`;
+            })
+        })
+    </script>
+    <script>
+        var div = document.getElementById("chat-content-div");
+        div.scrollTop = div.scrollHeight;
+    </script>
+    <script>
+        $('.alert-close-button').on('click', function () {
+            $('.t-body-chat-alert').toggleClass("none");
+        });
+    </script>
+</body>
+
+</html>

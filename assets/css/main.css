@@ -1,0 +1,881 @@
+:root {
+    --color-primary: #0036C4;
+    --color-white: white;
+    --color-secondary: #f5f5f5;
+    --padding-mo: 46px;
+    --border-radius-l: 8px;
+}
+
+.lock-r {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.relative {
+    position: relative;
+}
+
+.nmr {
+    margin-right: unset !important;
+}
+
+.nmt {
+    margin-top: unset !important;
+}
+
+.none {
+    display: none !important;
+}
+
+.flex-show {
+    display: flex !important;
+}
+
+body,
+html {
+    height: 100%;
+}
+
+main {
+    height: calc(100% - 205px);
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    padding: 24px var(--padding-mo) 0 var(--padding-mo);
+    margin-bottom: 24px;
+}
+
+.h-profile {
+    display: flex;
+    flex-direction: row;
+    padding: 12px;
+    background-color: var(--color-primary);
+    border-radius: var(--border-radius-l);
+    color: var(--color-white);
+    align-items: center;
+    min-width: 280px;
+}
+
+.h-profile-photo {
+    height: 48px;
+    width: 48px;
+    border-radius: 100%;
+}
+
+.h-profile-details {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.h-profile-details-clinic {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 2px;
+}
+
+.h-profile-details-clinic-icon {
+    margin-right: 4px;
+}
+
+.h-profile-details-name {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.h-profile-details-clinic-name {
+    opacity: 0.5;
+    font-size: 12px;
+}
+
+.h-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 24px;
+    background-color: var(--color-primary);
+    border-radius: 8px;
+    padding: 14px 40px;
+}
+
+.h-nav-links-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--color-white);
+}
+
+.h-nav-links-item-label {
+    font-size: 12px;
+    margin-top: 8px;
+}
+
+.tasks {
+    display: flex;
+    flex-direction: column;
+    margin: 0 var(--padding-mo);
+    height: 100%;
+}
+
+.t-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    padding: 16px 24px;
+    border-radius: 16px 16px 0 0;
+}
+
+.t-header-icon {
+    height: 20px;
+    width: 20px;
+    margin-right: 8px;
+}
+
+.t-header-text {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.t-body {
+    display: flex;
+    flex-direction: row;
+    min-height: 100%;
+    border: 1px solid #E6E8EC;
+}
+
+.t-body-nav {
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+}
+
+.t-body-nav-head,
+.t-body-nav-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 18px;
+    border-radius: 6px;
+    width: 250px;
+    height: 46.5px;
+}
+
+.t-body-nav-head-count {
+    display: flex;
+    align-items: center;
+    border-radius: 2px;
+    padding: 3.5px 7px;
+    background-color: black;
+    color: white;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.t-body-nav-head-icon,
+.t-body-nav-item-icon {
+    height: 18px;
+    width: 18px;
+    margin-right: 10px;
+}
+
+.t-body-nav-slicer {
+    width: 250px;
+    height: 1px;
+    background-color: #E6E8EC;
+    margin: 16px 0;
+    border-radius: 30px;
+}
+
+.t-body-nav-list-box {
+    margin-bottom: 10px;
+}
+
+.t-body-nav-list-box:hover {
+    background-color: var(--color-secondary);
+}
+
+.t-body-nav-head:hover {
+    background-color: var(--color-secondary);
+    cursor: pointer;
+}
+
+.t-body-nav {
+    border-right: 1px solid #E6E8EC;
+}
+
+.t-body-contacts {
+    background-color: var(--color-secondary);
+    padding: 24px;
+    width: 450px;
+}
+
+.contacts-header {
+    position: relative;
+}
+
+.contacts-header-title {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.contacts-header-stat,
+.chs-count {
+    font-size: 13px;
+    opacity: 0.8;
+}
+
+.contacts-header-icon {
+    position: absolute;
+    right: 0;
+    top: 10px;
+}
+
+.contacts-header-icon:hover {
+    cursor: pointer;
+}
+
+.contacts-search-input {
+    margin-top: 10px;
+    width: 100%;
+    border-radius: 6px;
+    border: 1px solid #BDBDBD;
+    height: 40px;
+    padding-right: 6px;
+    padding-left: 30px;
+    background-image: url(../img/icon-contacts-search.svg);
+    background-repeat: no-repeat;
+    background-position-x: 10px;
+    background-size: 14px;
+    background-position-y: center;
+}
+
+.contacts-list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 12px;
+}
+
+.contacts-list-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.contacts-list-item:hover {
+    background-color: #D9D9D9;
+    border-radius: 4px;
+}
+
+.contact-list-item-profile-details {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.contact-list-item-profile-photo {
+    margin-right: 10px;
+    padding: 4px 0px;
+    padding-left: 4px;
+}
+
+.contact-list-item-profile-details-name {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.contact-list-item-message-dot {
+    height: 8px;
+    width: 8px;
+    margin-left: 6px;
+    border-radius: 100%;
+    background-color: var(--color-primary);
+}
+
+.contact-list-item-profile-details-message-preview {
+    font-size: 12px;
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 160px;
+    white-space: nowrap;
+    opacity: 0.6;
+}
+
+.contact-list-item-profile-details-message-time {
+    position: absolute;
+    right: 0px;
+    top: 3px;
+    font-size: 12px;
+    opacity: 0.6;
+}
+
+.t-body-chat {
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 48px);
+    position: relative;
+    width: calc(100% - 600px);
+    margin-top: 24px;
+    margin-left: 24px;
+    margin-right: 24px;
+    margin-bottom: 24px;
+}
+
+.t-body-chat-talking-now {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    border-radius: 6px;
+    padding: 12px 16px;
+    background-color: var(--color-secondary);
+    border: 1px solid #e5e5e5;
+    justify-content: space-between;
+}
+
+.t-body-chat-talking-now-profile-photo {
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    margin-right: 10px;
+}
+
+.t-body-chat-talking-now-text {
+    font-size: 16px;
+}
+
+.t-body-chat-talking-now-action-button {
+    display: flex;
+    align-items: center;
+    background-color: black;
+    color: var(--color-white);
+    padding: 10px 16px;
+    border-radius: 4px;
+}
+
+.t-body-chat-talking-now-action-button:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.t-body-chat-talking-now-action-button-icon {
+    margin-right: 10px;
+}
+
+.talking-now-action-buttons {
+    column-gap: 10px;
+}
+
+.only-icon-button {
+    padding: 10px 12px;
+}
+
+.popup-background {
+    top: 0;
+    left: 0;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 100%;
+    width: 100%;
+    z-index: 3;
+}
+
+.popup-add-appointment,
+.popup-next-appointment,
+.popup-sent-appointment,
+.popup-appointment-request,
+.popup-accept-appointment,
+.popup-decline-appointment,
+.popup-edit-appointment {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+}
+
+.popup-body {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 16px;
+    width: max-content;
+    padding: 24px 36px;
+    z-index: 4;
+}
+
+.popup-header-title {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.popup-header-text {
+    font-size: 12px;
+    opacity: 0.6;
+}
+
+.add-appointment-form {
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.popup-add-appointment-select-doctor,
+.popup-add-appointment-select-treatment {
+    border: none;
+    font-size: 17px;
+    color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+}
+
+.add-appointment-select-box {
+    margin-top: 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    border-radius: 6px;
+    height: 48px;
+    padding: 14px 18px;
+}
+
+.popup-select-icon {
+    margin-right: 10px;
+}
+
+.popup-label {
+    display: block;
+    font-size: 17px;
+    font-weight: 500;
+    opacity: 0.6;
+    margin-top: 16px;
+}
+
+.popup-select-text {
+    font-size: 17px;
+    opacity: 0.6;
+}
+
+.popup-action-buttons {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    column-gap: 10px;
+}
+
+.popup-action-button {
+    border: none;
+    background: none;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 30px;
+    height: 40px;
+    display: block;
+}
+
+.popup-action-button:hover {
+    cursor: pointer;
+}
+
+.decline-action {
+    flex: 1.25;
+    border: 2px solid rgba(0, 0, 0, 0.6);
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.decline-action:hover {
+    background-color: #666666;
+    border: 2px solid #666666;
+    color: white;
+}
+
+.r-decline-action {
+    flex: 1;
+    background-color: #DE0303;
+    color: white;
+}
+
+.r-decline-action:hover {
+    background-color: #c10000;
+}
+
+.edit-action {
+    flex: 1;
+    border: 2px solid rgba(0, 0, 0, 0.6);
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.edit-action:hover {
+    background-color: #666666;
+    border: 2px solid #666666;
+    color: white;
+}
+
+.accept-action {
+    flex: 2;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+
+.accept-action:hover {
+    background-color: #012c9b;
+    color: white;
+}
+
+.r-accept-action {
+    flex: 1;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+
+.r-accept-action:hover {
+    background-color: #012c9b;
+    color: white;
+}
+
+.popup-top-icon {
+    height: 82px;
+    width: min-content;
+    margin: 24px 0;
+}
+
+.popup-subheadline {
+    color: black;
+    font-weight: 500;
+    font-size: 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding-bottom: 8px;
+}
+
+.popup-detail-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.popup-detail-box-label {
+    display: inline-block;
+    font-size: 13px;
+}
+
+.popup-detail-box-value {
+    display: inline-block;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.ok-button,
+.aa-button,
+.da-button {
+    width: 80%;
+    background-color: #0036C4;
+    color: white;
+}
+
+.aa-button,
+.da-button {
+    margin-top: 24px;
+}
+
+.popup-check-icon {
+    width: 54px;
+    height: 54px;
+    margin-bottom: 12px;
+    margin-top: 12px;
+}
+
+.popup-info-title {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.popup-info-text {
+    font-size: 14px;
+    opacity: 0.6;
+    width: 80%;
+    text-align: center;
+}
+
+.ok-button {
+    margin-top: 24px;
+}
+
+.popup-info-body {
+    padding: 32px 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-close-button {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+}
+
+.add-close,
+.next-close {
+    top: 28px;
+}
+
+.popup-close-button:hover {
+    cursor: pointer;
+}
+
+.t-body-chat-content {
+    height: 100%;
+    width: 100%;
+}
+
+.t-body-chat-write-message {
+    border-radius: 6px;
+    background-color: #F5F5F5;
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 17px;
+    width: 100%;
+    font-weight: bold;
+    padding-top: 14px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 6px;
+    padding-left: 10px;
+}
+
+.send-message-textarea {
+    font-size: 14px;
+    width: 95%;
+    resize: none;
+    border: none;
+    background-color: unset;
+}
+
+.t-body-chat-write-message-icon {
+    background-color: #0036C4;
+    padding: 10px;
+    border-radius: 6px;
+    height: 40px;
+}
+
+.t-body-chat-write-message-icon:hover {
+    cursor: pointer;
+}
+
+.day-slicer {
+    margin: 24px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.day-slicer-hr {
+    height: 1px;
+    opacity: 0.2;
+    width: 100%;
+}
+
+.day-slicer-messages-day {
+    padding: 0 16px;
+    text-align: center;
+    width: 30%;
+    font-size: 15px;
+}
+
+.t-body-chat-content {
+    margin-top: 80px;
+    max-height: 100%;
+    overflow-y: scroll;
+    margin-bottom: 10px;
+    padding-right: 14px;
+    scrollbar-base-color: unset;
+}
+
+.message {
+    font-size: 14px;
+}
+
+.message {
+    display: flex;
+    padding: 8px 12px;
+    border-radius: 16px 16px 16px 0;
+    background-color: #F5F5F5;
+    color: black;
+    width: max-content;
+    margin: 10px 0;
+    max-width: 70%;
+}
+
+.sent {
+    display: flex;
+    margin-left: auto;
+    background-color: #0036C4;
+    color: white;
+    padding: 8px 12px;
+    width: max-content;
+    border-radius: 16px 16px 0 16px;
+}
+
+.message-time {
+    display: block;
+    width: max-content;
+    font-size: 12px;
+    opacity: 0.6;
+    margin-top: -6px;
+    margin-left: 4px;
+}
+
+.mt-sent {
+    margin-left: auto;
+}
+
+.request-message,
+.missing-call-from-patient {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.request-message-icon,
+.missing-call-icon {
+    margin-right: 10px;
+}
+
+.request-message-info {
+    font-size: 14px;
+    opacity: 0.6;
+}
+
+.appointment-request-from-patient,
+.missing-call-from-patient,
+.appointment-request-from-clinic {
+    padding: 8px 12px;
+    border-radius: 16px 16px 16px 0;
+    background-color: #F5F5F5;
+    color: black;
+    width: max-content;
+    margin: 10px 0;
+    max-width: 70%;
+}
+
+.appointment-request-from-patient:hover,
+.missing-call-from-patient:hover {
+    cursor: pointer;
+    background-color: #e0dddd;
+}
+
+.appointment-request-from-clinic {
+    background-color: #0036C4;
+    color: white;
+    margin-left: auto;
+    border-radius: 16px 16px 0 16px;
+}
+
+.appointment-request-from-clinic:hover {
+    background-color: #012c9b;
+    cursor: pointer;
+}
+
+.t-body-chat-alert {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--color-primary);
+    position: absolute;
+    top: 80px;
+    width: 100%;
+    padding: 10px 16px;
+    border-radius: 6px;
+    color: white;
+    z-index: 2;
+    border-bottom: 4px solid white;
+    border-radius: 6px;
+}
+
+.chat-alert-icon {
+    margin-right: 10px;
+    height: 24px;
+    width: 24px;
+}
+
+.alert-talking-now-user-name,
+.alert-call-info {
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.alert-call-time {
+    font-weight: 300;
+    margin-left: 4px;
+    font-size: 15px;
+}
+
+.alert-call-button {
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 30px;
+    color: white;
+    font-weight: bold;
+    padding: 5px 12px;
+    max-height: 30px;
+    margin-right: 12px;
+}
+
+.alert-close-button {
+    height: 30px;
+    width: 30px;
+}
+
+.alert-call-button,
+.alert-close-button {
+    cursor: pointer;
+}
+
+.alert-close-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 30px;
+    padding: 5px 12px;
+    max-height: 30px;
+    color: white;
+    font-weight: bold;
+}
+
+.alert-call-button:hover,
+.alert-close-button:hover {
+    background-color: white;
+    color: var(--color-primary);
+}
+
+.top-icon-fix {
+    height: 54px;
+    width: 54px;
+}
+
+.aa-fix,
+.da-fix {
+    margin-top: 12px;
+}
